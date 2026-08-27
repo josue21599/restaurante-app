@@ -24,7 +24,8 @@ CREATE TABLE Producto (
     descripcion  VARCHAR(255),
     precio       DECIMAL(8,2) NOT NULL,
     categoria    VARCHAR(50),
-    disponible   BOOLEAN NOT NULL DEFAULT TRUE
+    disponible   BOOLEAN NOT NULL DEFAULT TRUE,
+    stock        INT NOT NULL DEFAULT 0
 );
 
 CREATE TABLE Pedido (

@@ -13,10 +13,15 @@ INSERT INTO Reserva (id_mesa, nombre_cliente, fecha, hora, num_personas, estado)
 (1, 'Luis Perez', '2026-08-31', '14:00:00', 3, 'pendiente');
 
 -- 3. Producto (no depende de nadie)
-INSERT INTO Producto (nombre, descripcion, precio, categoria, disponible) VALUES
-('Paella valenciana', 'Arroz con pollo y verduras', 12.50, 'Plato principal', TRUE),
-('Ensalada Cesar', 'Lechuga, pollo, parmesano', 8.00, 'Entrante', TRUE),
-('Tarta de queso', 'Postre casero', 4.50, 'Postre', TRUE);
+INSERT INTO Producto (nombre, descripcion, precio, categoria, disponible, stock) VALUES
+('Paella valenciana', 'Arroz con pollo y verduras', 12.50, 'Plato principal', TRUE, 15),
+('Ensalada Cesar', 'Lechuga, pollo, parmesano', 8.00, 'Entrante', TRUE, 8),
+('Tarta de queso', 'Postre casero', 4.50, 'Postre', TRUE, 20),
+('Pizza margarita', 'Tomate, mozzarella, albahaca', 9.50, 'Plato principal', TRUE, 5),
+('Hamburguesa clasica', 'Carne, queso, lechuga, tomate', 11.00, 'Plato principal', TRUE, 25),
+('Gazpacho', 'Sopa fria de tomate', 5.50, 'Entrante', TRUE, 12),
+('Croquetas de jamon', 'Seis unidades caseras', 7.00, 'Entrante', TRUE, 3),
+('Flan casero', 'Flan de huevo con caramelo', 3.80, 'Postre', TRUE, 18);
 
 -- 4. Pedido (depende de Mesa)
 INSERT INTO Pedido (id_mesa, estado, total) VALUES
