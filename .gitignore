@@ -1,0 +1,21 @@
+# IDEs (IntelliJ, VS Code, Eclipse)
+.idea/
+.vscode/
+*.iml
+.settings/
+.classpath
+.project
+
+# Compilados y build de Java/Maven
+target/
+*.class
+*.jar
+
+# Logs
+*.log
+
+# Windows
+Thumbs.db
+
+# Variables de entorno / credenciales
+.env
