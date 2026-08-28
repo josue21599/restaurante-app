@@ -56,4 +56,4 @@ Previstas para el desarrollo de la aplicacion (curso 2):
 ```
 
 ## Autor
-Josue - Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
+Josué Pérez Borja - Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)
